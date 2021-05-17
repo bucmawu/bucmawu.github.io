@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://bucmawu.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Mar 2021 11:39:10 +0800</lastBuildDate><atom:link href="https://bucmawu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://bucmawu.github.io/post/blog/</link>
+      <pubDate>Fri, 26 Mar 2021 11:39:10 +0800</pubDate>
+      
+      <guid>https://bucmawu.github.io/post/blog/</guid>
+      <description>第五章 盲法技术  [toc]
+做用：减少偏倚 偏倚: 泛指一切测量值对真值的偏离 在临床试验中: 指设计、执行、分析评价过程中产生的，可干扰疗效和安全性评价的系统误差。 除了盲法以外，另一个减少偏倚的措施是随机化。
+ 第一节 盲法及其意义  研究者知道受试者的随机化分组信息
+ 可能会有意无意地有选择性地入组受试者 医疗行为带有倾向性。  受试者知道自己使用的研究药物
+ 心理感受改变 疗效与安全性偏差性评估  盲法的意义就在于: 避免观察者的主观因素对结果评定的影响 400年前文艺复兴时的大哲学家弗朗西斯·培根就指出过主观因素可能影响结果。
+心诚则灵？
+安慰剂技术 使盲法成为了可能。
+ 1938年的迪尔（Diehl）明尼苏达大学流感疫苗临床试验是最早的安慰剂盲法对照试验 1948年请链霉素治疗肺结核的临床试验被认为是首个采用独立第三方评价的试验  盲法:临床试验的参与者不知晓随机化分组信息，试验中各方人员在整个试验中对随机化分组保持“盲态”（不知晓） 双盲+第三方独立评价技术:是临床试验中经常使用的避免偏倚的重要技术 ==盲法可以有效降低（因知道随机化分组信息而产生的）偏倚==
+ 第二节 设盲程度  三种程度：单盲，双盲，非盲
+ 双盲： 观察者（研究者、参与评价者、数据管理、统计分析）和受试者（病人本人、亲属、监护人、陪护人）都不知道 单盲：仅受试者不知道 非盲（开放）：地球人都知道  最理想的情况是双盲。
+如果双盲实施难度大，或者比较不同的器械、手术之间的疗效研究；药物和器械存在很大差异的情况下，使用单盲。
+使用何种设盲程度，取决于具体情况。
+一、双盲试验 ==必须采用双盲==
+ 当观察指标受主观因素影响较大，例如神经、精神类的药物； 缓解症状的药物； 受试者自我评价为主要指标的临床试验； 以安慰剂为对照的临床试验；  ==尽量使用双盲==
+ 客观指标（生化、血压测量值）；  二、单盲试验 举例：非劣效性试验：对比西美加群与法华林的SPORTIF (stroke prevention using an oral thrombin inhibitor in atrial fibrillation) 方案相同的情况下，单盲双盲得出了相反的结论。</description>
+    </item>
+    
+    <item>
+      <title>Blogaaaaaa</title>
+      <link>https://bucmawu.github.io/post/blog1/</link>
+      <pubDate>Fri, 26 Mar 2021 11:39:10 +0800</pubDate>
+      
+      <guid>https://bucmawu.github.io/post/blog1/</guid>
+      <description>sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
+sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
+sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
+sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
+sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
+sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba</description>
+    </item>
+    
+  </channel>
+</rss>
