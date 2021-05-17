@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>临床试验统计学  第四章 随机原则与随机化技术 // My New Hugo Site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://bucmawu.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="临床试验统计学  第四章 随机原则与随机化技术"/>
+<meta name="twitter:description" content="临床试验统计学 第四章 随机原则与随机化技术 随机原则是临床试验必须遵循的三个基本原则之一。
+遵循随机原则可以尽量避免受试者的选择偏倚；同时，只有合乎随机原则的数据才能正确应用数理统计的各种分析方法。 随机对照是临床试验的一种“金标准”方法，随机化技术和盲法技术的结合是保证临床试验非 处理因素在组间分布均衡的重要措施。 广义地讲，科学研究中随机化包含了三个方面的内容：
+①抽样随机（random sampling):每一个符合条件的人参加试验的机会相同，即总体中的每个个体有相同的机会被抽到试验 样本中来；
+②分组随机（random allocation):每个实验对象分配到某处理组的机会相同；
+③试验顺序随机：每个受试者先后接受处理的机会相同。在临床试验中，很难或不可能做到随机 抽样。因此，临床试验中关注的是分组的随机。
+本章所介绍的内容为随机化分组。
+第一节 随机化及其意义  1662年 随机化思想的提出 成组随机 1898年 交替分组法 基于受试者个体的分组 （事先知道下一个受试者的分组，无法避免选择性偏倚） 1948年 真正现代化意义的临床随机化分组  随机化分组的意义 随机化分组：分配到每个组的机会均等、不收主观意愿影响、避免系统差异
+意义：
+1. 各处理组的各种非处理因素分布趋于相似，组间基线具有可比性 2. 应用假设检验进行比较分析的前提  随机化分组方法的分类 按照随机化分组的概率在试验中是否保持一致，随机化可以分为固定随机化方法和动态随机化
+固定随机法：按照事先确定的概率讲受试者分配到不同的组别，整个研究过程中保持分配概率不变。
+简单随机化、区组随机化分层随机化、分层区组随机化
+动态随机法：适用于样本量较小，又必须考虑某些重要的分层因素，如抗肿瘤药物试验
+试验过程中受试者随机化分组的概率根据入组的受试者情况而变化。
+偏币法、瓮法、最小化法
+本章介绍简单随机化、区组随机化、分层随机化、区组分层随机化、最小随机化 其他适应性随机化方法见二十章
+第二节 简单随机化 也称为完全随机化。除了对受试者的数量及组间分配比例有所要求外，对随机化序列不附加任何限制的随机化过程。
+简单随机化法包括：抽签法、掷硬币法、排序法、随机数字表法。
+目前医学研究中的随机化采用计算机程序产生伪随机数进行
+/*240例患者，按照1：1的比例分配，采用完全随机方法分成两组。*/ /*输出数据集rand,r:1-240的随机数序列*/ proc plan seed = 210002; factors r = 240; output out = rand; run; /*根据随机数进行1：1比例分配*/ data rand; set rand; number = _n_; if r &lt;= 120 then group = &#39;A&#39;; else group = &#39;B&#39;; run; /*输出随机化的分配结果*/ proc print noobs; var number group; run; UNIFORM Function"/>
+
+    <meta property="og:title" content="临床试验统计学  第四章 随机原则与随机化技术" />
+<meta property="og:description" content="临床试验统计学 第四章 随机原则与随机化技术 随机原则是临床试验必须遵循的三个基本原则之一。
+遵循随机原则可以尽量避免受试者的选择偏倚；同时，只有合乎随机原则的数据才能正确应用数理统计的各种分析方法。 随机对照是临床试验的一种“金标准”方法，随机化技术和盲法技术的结合是保证临床试验非 处理因素在组间分布均衡的重要措施。 广义地讲，科学研究中随机化包含了三个方面的内容：
+①抽样随机（random sampling):每一个符合条件的人参加试验的机会相同，即总体中的每个个体有相同的机会被抽到试验 样本中来；
+②分组随机（random allocation):每个实验对象分配到某处理组的机会相同；
+③试验顺序随机：每个受试者先后接受处理的机会相同。在临床试验中，很难或不可能做到随机 抽样。因此，临床试验中关注的是分组的随机。
+本章所介绍的内容为随机化分组。
+第一节 随机化及其意义  1662年 随机化思想的提出 成组随机 1898年 交替分组法 基于受试者个体的分组 （事先知道下一个受试者的分组，无法避免选择性偏倚） 1948年 真正现代化意义的临床随机化分组  随机化分组的意义 随机化分组：分配到每个组的机会均等、不收主观意愿影响、避免系统差异
+意义：
+1. 各处理组的各种非处理因素分布趋于相似，组间基线具有可比性 2. 应用假设检验进行比较分析的前提  随机化分组方法的分类 按照随机化分组的概率在试验中是否保持一致，随机化可以分为固定随机化方法和动态随机化
+固定随机法：按照事先确定的概率讲受试者分配到不同的组别，整个研究过程中保持分配概率不变。
+简单随机化、区组随机化分层随机化、分层区组随机化
+动态随机法：适用于样本量较小，又必须考虑某些重要的分层因素，如抗肿瘤药物试验
+试验过程中受试者随机化分组的概率根据入组的受试者情况而变化。
+偏币法、瓮法、最小化法
+本章介绍简单随机化、区组随机化、分层随机化、区组分层随机化、最小随机化 其他适应性随机化方法见二十章
+第二节 简单随机化 也称为完全随机化。除了对受试者的数量及组间分配比例有所要求外，对随机化序列不附加任何限制的随机化过程。
+简单随机化法包括：抽签法、掷硬币法、排序法、随机数字表法。
+目前医学研究中的随机化采用计算机程序产生伪随机数进行
+/*240例患者，按照1：1的比例分配，采用完全随机方法分成两组。*/ /*输出数据集rand,r:1-240的随机数序列*/ proc plan seed = 210002; factors r = 240; output out = rand; run; /*根据随机数进行1：1比例分配*/ data rand; set rand; number = _n_; if r &lt;= 120 then group = &#39;A&#39;; else group = &#39;B&#39;; run; /*输出随机化的分配结果*/ proc print noobs; var number group; run; UNIFORM Function" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bucmawu.github.io/post/%E4%B8%B4%E5%BA%8A%E8%AF%95%E9%AA%8C%E7%BB%9F%E8%AE%A1%E5%AD%A6-%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%9A%8F%E6%9C%BA%E5%8E%9F%E5%88%99%E4%B8%8E%E9%9A%8F%E6%9C%BA%E5%8C%96%E6%8A%80%E6%9C%AF/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-26T11:39:10&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-26T11:39:10&#43;08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://bucmawu.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">临床试验统计学  第四章 随机原则与随机化技术</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 26, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="临床试验统计学--第四章-随机原则与随机化技术">临床试验统计学  第四章 随机原则与随机化技术</h1>
+<p>随机原则是临床试验必须遵循的三个基本原则之一。</p>
+<p>遵循随机原则可以尽量避免受试者的选择偏倚；同时，只有合乎随机原则的数据才能正确应用数理统计的各种分析方法。
+随机对照是临床试验的一种“金标准”方法，随机化技术和盲法技术的结合是保证临床试验非
+处理因素在组间分布均衡的重要措施。
+广义地讲，科学研究中随机化包含了三个方面的内容：</p>
+<p>①抽样随机（random sampling):每一个符合条件的人参加试验的机会相同，即总体中的每个个体有相同的机会被抽到试验
+样本中来；</p>
+<p>②分组随机（random allocation):每个实验对象分配到某处理组的机会相同；</p>
+<p>③试验顺序随机：每个受试者先后接受处理的机会相同。在临床试验中，很难或不可能做到随机
+抽样。因此，临床试验中关注的是分组的随机。</p>
+<p>本章所介绍的内容为随机化分组。</p>
+<h2 id="第一节-随机化及其意义">第一节 随机化及其意义</h2>
+<ol>
+<li>1662年  随机化思想的提出 成组随机</li>
+<li>1898年 交替分组法  基于受试者个体的分组 （事先知道下一个受试者的分组，无法避免选择性偏倚）</li>
+<li>1948年 真正现代化意义的临床随机化分组</li>
+</ol>
+<h3 id="随机化分组的意义">随机化分组的意义</h3>
+<p>随机化分组：分配到每个组的机会均等、不收主观意愿影响、避免系统差异</p>
+<p>意义：</p>
+<pre><code>1. 各处理组的各种非处理因素分布趋于相似，组间基线具有可比性
+2. 应用假设检验进行比较分析的前提
+</code></pre>
+<h3 id="随机化分组方法的分类">随机化分组方法的分类</h3>
+<p>按照随机化分组的概率在试验中是否保持一致，随机化可以分为固定随机化方法和动态随机化</p>
+<p>固定随机法：按照事先确定的概率讲受试者分配到不同的组别，整个研究过程中保持分配概率不变。<br>
+简单随机化、区组随机化分层随机化、分层区组随机化</p>
+<p>动态随机法：适用于样本量较小，又必须考虑某些重要的分层因素，如抗肿瘤药物试验<br>
+试验过程中受试者随机化分组的概率根据入组的受试者情况而变化。<br>
+偏币法、瓮法、最小化法</p>
+<p>本章介绍简单随机化、区组随机化、分层随机化、区组分层随机化、最小随机化 <br>
+其他适应性随机化方法见二十章</p>
+<h2 id="第二节-简单随机化">第二节 简单随机化</h2>
+<p>也称为完全随机化。除了对受试者的数量及组间分配比例有所要求外，对随机化序列不附加任何限制的随机化过程。</p>
+<p>简单随机化法包括：抽签法、掷硬币法、排序法、随机数字表法。</p>
+<p>目前医学研究中的随机化采用<strong>计算机程序产生伪随机数</strong>进行</p>
+<pre><code>/*240例患者，按照1：1的比例分配，采用完全随机方法分成两组。*/
+
+/*输出数据集rand,r:1-240的随机数序列*/
+proc plan seed = 210002;
+    factors r = 240;
+    output out = rand;
+run;
+
+/*根据随机数进行1：1比例分配*/
+data rand;
+    set rand;
+    number = _n_;
+    if r &lt;= 120 then group = 'A';
+    else group = 'B';
+run;
+
+/*输出随机化的分配结果*/
+proc print noobs;
+    var number group;
+run;
+</code></pre><p>UNIFORM Function</p>
+<pre><code>data demo;
+	do i = 1 to 240;
+		r = uniform(2100001);
+		output;
+	end;
+run;
+
+proc rank data=demo out=rank ;
+	ranks r_rank;
+	var r;
+run;
+
+data rank1;
+	set rank;
+	if _n_ &gt;=120 then group = 'A';
+	else group = 'B';
+run;
+
+proc print data = rank1;
+	var r_rank group;
+run;
+</code></pre><h2 id="第三节-区组随机化">第三节 区组随机化</h2>
+<p>也称为：均衡随机化、限制性随机化 <br>
+与简单随机化相比，可以确保在整个实验过程中进入每一组的受试者数基本相等，避免分配进度存在时间上的快慢差异，将偏倚减少到最小。 <br>
+区组随机化是常用的随机化方法。</p>
+<ol>
+<li>确定区组长度（区组中对象的数目，组数的2-3倍）</li>
+<li>在区组内按照事先确定的分配比例随机分配</li>
+</ol>
+<p>优点：随机化的过程中，时刻保证各组人数的平衡。某一阶段入组受试者特征发生变化，区组随机化可以获得更好的可比性分组。<br>
+隐患：医生可以猜到每一区组最后一位受试者属于哪一组（4人一区组，前三位ABB，最后必定为B）。区组越小越容易预测，应尽量避免只有两位受试者的区组，采用可变区组。
+此处有疑问：盲态情况下，如何得知前面受试者分组的？</p>
+<pre><code>/*240例患者，按照2：1比例分配，根据区组随机化分组*/
+/*生成随机数序列，区组长度取6，分为40组*/
+proc plan seed = 200001;
+	factors block = 40 length = 6;
+	output out = rand;
+run;
+
+/*每个区组前4人设为A组，后2人设为B组*/
+data rand;
+	set rand;
+	subjid = _n_;
+	if length &lt;= 4 then group = 'A';
+	else group = 'B';
+	keep subjid group;
+run;
+/*输出随机化结果*/
+proc print data = rand noobs;
+run;
+</code></pre><h2 id="第四节-分层区组随机化">第四节 分层区组随机化</h2>
+<p>优点：分层可以保证组内各层之间的均衡性，区组可以保证组间的可比性。</p>
+<p>假设试验方案中，受试者年龄与性别的不同，对疾病的预后影响很大，需要按照不同的年龄与性别进行组合分层。</p>
+<p>将产生4个亚组：①年龄&lt;18岁的男性、②年龄≥18岁的男性、③年龄&lt;18岁的女性、④年龄≥18岁的女性。</p>
+<p>![image-20201126173430146](/Users/xinqingwu/Library/Application Support/typora-user-images/image-20201126173430146.png)</p>
+<p>多中心临床试验中，中心是常见的分层因素，先按照中心分层，再根据其他因素分层，保证每个中心都能够随机化分组。</p>
+<p>注意点：</p>
+<ol>
+<li>
+<p>随机化方法的科学性。</p>
+<p>选取正确的分层因素，入院日期（奇偶数分组）不应作为分层因素。</p>
+</li>
+<li>
+<p>保证随机化的准确性。</p>
+<p>确保随机数序列不被破坏，严格按照试验用药品编号的先后顺序入组。</p>
+</li>
+<li>
+<p>保证区组长度是试验组数的整数倍以上。</p>
+</li>
+</ol>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

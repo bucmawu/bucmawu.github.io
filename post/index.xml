@@ -8,11 +8,38 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Mar 2021 11:39:10 +0800</lastBuildDate><atom:link href="https://bucmawu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
-      <link>https://bucmawu.github.io/post/blog/</link>
+      <title>临床试验统计学  第四章 随机原则与随机化技术</title>
+      <link>https://bucmawu.github.io/post/%E4%B8%B4%E5%BA%8A%E8%AF%95%E9%AA%8C%E7%BB%9F%E8%AE%A1%E5%AD%A6-%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%9A%8F%E6%9C%BA%E5%8E%9F%E5%88%99%E4%B8%8E%E9%9A%8F%E6%9C%BA%E5%8C%96%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Fri, 26 Mar 2021 11:39:10 +0800</pubDate>
       
-      <guid>https://bucmawu.github.io/post/blog/</guid>
+      <guid>https://bucmawu.github.io/post/%E4%B8%B4%E5%BA%8A%E8%AF%95%E9%AA%8C%E7%BB%9F%E8%AE%A1%E5%AD%A6-%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%9A%8F%E6%9C%BA%E5%8E%9F%E5%88%99%E4%B8%8E%E9%9A%8F%E6%9C%BA%E5%8C%96%E6%8A%80%E6%9C%AF/</guid>
+      <description>临床试验统计学 第四章 随机原则与随机化技术 随机原则是临床试验必须遵循的三个基本原则之一。
+遵循随机原则可以尽量避免受试者的选择偏倚；同时，只有合乎随机原则的数据才能正确应用数理统计的各种分析方法。 随机对照是临床试验的一种“金标准”方法，随机化技术和盲法技术的结合是保证临床试验非 处理因素在组间分布均衡的重要措施。 广义地讲，科学研究中随机化包含了三个方面的内容：
+①抽样随机（random sampling):每一个符合条件的人参加试验的机会相同，即总体中的每个个体有相同的机会被抽到试验 样本中来；
+②分组随机（random allocation):每个实验对象分配到某处理组的机会相同；
+③试验顺序随机：每个受试者先后接受处理的机会相同。在临床试验中，很难或不可能做到随机 抽样。因此，临床试验中关注的是分组的随机。
+本章所介绍的内容为随机化分组。
+第一节 随机化及其意义  1662年 随机化思想的提出 成组随机 1898年 交替分组法 基于受试者个体的分组 （事先知道下一个受试者的分组，无法避免选择性偏倚） 1948年 真正现代化意义的临床随机化分组  随机化分组的意义 随机化分组：分配到每个组的机会均等、不收主观意愿影响、避免系统差异
+意义：
+1. 各处理组的各种非处理因素分布趋于相似，组间基线具有可比性 2. 应用假设检验进行比较分析的前提  随机化分组方法的分类 按照随机化分组的概率在试验中是否保持一致，随机化可以分为固定随机化方法和动态随机化
+固定随机法：按照事先确定的概率讲受试者分配到不同的组别，整个研究过程中保持分配概率不变。
+简单随机化、区组随机化分层随机化、分层区组随机化
+动态随机法：适用于样本量较小，又必须考虑某些重要的分层因素，如抗肿瘤药物试验
+试验过程中受试者随机化分组的概率根据入组的受试者情况而变化。
+偏币法、瓮法、最小化法
+本章介绍简单随机化、区组随机化、分层随机化、区组分层随机化、最小随机化 其他适应性随机化方法见二十章
+第二节 简单随机化 也称为完全随机化。除了对受试者的数量及组间分配比例有所要求外，对随机化序列不附加任何限制的随机化过程。
+简单随机化法包括：抽签法、掷硬币法、排序法、随机数字表法。
+目前医学研究中的随机化采用计算机程序产生伪随机数进行
+/*240例患者，按照1：1的比例分配，采用完全随机方法分成两组。*/ /*输出数据集rand,r:1-240的随机数序列*/ proc plan seed = 210002; factors r = 240; output out = rand; run; /*根据随机数进行1：1比例分配*/ data rand; set rand; number = _n_; if r &amp;lt;= 120 then group = &#39;A&#39;; else group = &#39;B&#39;; run; /*输出随机化的分配结果*/ proc print noobs; var number group; run; UNIFORM Function</description>
+    </item>
+    
+    <item>
+      <title>临床试验统计学 第五章  盲法技术</title>
+      <link>https://bucmawu.github.io/post/%E4%B8%B4%E5%BA%8A%E8%AF%95%E9%AA%8C%E7%BB%9F%E8%AE%A1%E5%AD%A6-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%9B%B2%E6%B3%95%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Fri, 26 Mar 2021 11:39:10 +0800</pubDate>
+      
+      <guid>https://bucmawu.github.io/post/%E4%B8%B4%E5%BA%8A%E8%AF%95%E9%AA%8C%E7%BB%9F%E8%AE%A1%E5%AD%A6-%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%9B%B2%E6%B3%95%E6%8A%80%E6%9C%AF/</guid>
       <description>第五章 盲法技术  [toc]
 做用：减少偏倚 偏倚: 泛指一切测量值对真值的偏离 在临床试验中: 指设计、执行、分析评价过程中产生的，可干扰疗效和安全性评价的系统误差。 除了盲法以外，另一个减少偏倚的措施是随机化。
  第一节 盲法及其意义  研究者知道受试者的随机化分组信息
@@ -28,20 +55,6 @@
 一、双盲试验 ==必须采用双盲==
  当观察指标受主观因素影响较大，例如神经、精神类的药物； 缓解症状的药物； 受试者自我评价为主要指标的临床试验； 以安慰剂为对照的临床试验；  ==尽量使用双盲==
  客观指标（生化、血压测量值）；  二、单盲试验 举例：非劣效性试验：对比西美加群与法华林的SPORTIF (stroke prevention using an oral thrombin inhibitor in atrial fibrillation) 方案相同的情况下，单盲双盲得出了相反的结论。</description>
-    </item>
-    
-    <item>
-      <title>Blogaaaaaa</title>
-      <link>https://bucmawu.github.io/post/blog1/</link>
-      <pubDate>Fri, 26 Mar 2021 11:39:10 +0800</pubDate>
-      
-      <guid>https://bucmawu.github.io/post/blog1/</guid>
-      <description>sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
-sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
-sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
-sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
-sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba
-sdhjshjshdkasdjlkahjckasnfrkjqbfviub wnb2oivhbdkjfgn2oihfbjkvbkjwbjqba</description>
     </item>
     
   </channel>
